@@ -44,7 +44,7 @@ header nav a.active {
   min-height: 40.62em; /*em pone el tamaño en funcion de font-size*/
   color: #ffffff;
   background: linear-gradient(rgb(210, 105, 20, 0.4) 0%, #000000 100%),
-    url('../images/principal.jpg');
+    url('../images/8.jpg');
   background-position: center center;
   background-size: cover;
   margin-bottom: 3.12em;
@@ -85,6 +85,53 @@ header nav a.active {
 .principal .button i {
   margin-right: 20px;
 }
+.crslcontainer {
+  position: relative;
+}
+.crslp,
+.crsln {
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: none;
+  top: 45%;
+  cursor: pointer;
+  line-height: 30px;
+  text-align: center;
+  background: none;
+  color: #fff;
+  opacity: 20%;
+}
+.crslp {
+  left: -30px;
+}
+.crsln {
+  right: -30px;
+}
+.crsli p {
+  text-align: center;
+  color: #ffffff;
+}
+.crslp:hover,
+.crsln:hover {
+  opacity: 100%;
+}
+.crslis .glider-dot {
+  display: block;
+  width: 30px;
+  height: 4px;
+  background: #fff;
+  opacity: 0.2;
+  border-radius: 0;
+}
+.crslis .glider-dot:hover {
+  opacity: 0.5;
+}
+.crslis .glider-dot.active {
+  opacity: 1;
+}
+
 /*MEDIA QUERIES*/
 @media screen and (max-width: 800px) {
   header .logo {
